@@ -12,6 +12,7 @@ Description.
 Installation.
 
 It uses composer, so everything you to use it is:
+
 1. Clone repo
 2. composer install
 3. Apply db.sql to your db
