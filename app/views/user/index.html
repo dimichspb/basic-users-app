@@ -1,0 +1,16 @@
+<h1>Search form</h1>
+<form action="/search" method="post">
+  <div class="form-group">
+    <label for="InputSearch">Search text</label>
+    <input type="text" class="form-control" id="InputSearch" name="search" placeholder="Search text">
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+
+<h3>Search results: </h3>
+
+<ul>
+{% for user in usersList %}
+    <li>Name: <u>{{ user.name }}</u>, email: <u>{{ user.email }}</u>, timezone: <u>{{ user.timezone }}</u></li>
+{% endfor %}
+</ul>
